@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Inter",sans-serif;
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.app-wrapper {
+    position: relative;
+    display: flex;
+    height: 700px;
+    min-height: 480px;
+    background: rgb(20,239,186);
+background: linear-gradient(156deg, rgba(20,239,186,1) 2%, rgba(47,0,255,1) 58%, rgba(144,64,253,1) 100%);
+    width: 600px;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px / 15px 15px 15px 15px ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 40px 40px;
+    flex-direction: column;
+}
+
+.app-title {
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: "Montserrat",sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#search-box {
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    font-size: 1rem;
+    background: #f6f6f6;
+    padding: 20px 35px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+#search-button {
+    position: absolute;
+    left: 85%;
+    padding: 20px;
+    height: 60px;
+    width: 57px;
+}
+
+#search-erase {
+    display: none;
+    position: absolute;
+    left: 85%;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.error {
+    display: none;
+}
+
+.error h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.temp-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#weather-icon {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 30px;
+}
+
+.temperature {
+    font-family: "Montserrat",sans-serif;
+    font-size: 80px !important;
+    margin-bottom: 10px;
+}
+
+.city-name {
+    font-family: "Montserrat",sans-serif;
+    font-size: 45px;
+}
+
+.humidity-wind-section {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.humidity-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.humidity-info h5 {
+    font-weight: 500;
+}
+
+.wind-info h5 {
+    font-weight: 500;
+}
+
+.wind-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.row img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.row h4 {
+    font-size: 50px;
+    font-weight: 300;
+}
